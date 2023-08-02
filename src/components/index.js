@@ -1,2 +1,2 @@
 export { Header } from './Header';
-export { MenuResponsiveIcon } from './Icons';
+export { MenuResponsiveIcon, LinkedInIcon, GitHubIcon } from './Icons';
