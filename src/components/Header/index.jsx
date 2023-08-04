@@ -5,7 +5,7 @@ import './Header.css';
 
 const menu = [
     { id: crypto.randomUUID(), to: '/', text: 'INICIO' },
-    { id: crypto.randomUUID(), to: '/sobre-mi', text: 'SOBRE MÍ' },
+    { id: crypto.randomUUID(), to: '/about', text: 'SOBRE MÍ' },
     { id: crypto.randomUUID(), to: '/skills', text: 'SKILLS' },
     // { id: crypto.randomUUID(), to: '/curriculum', text: 'CURRICULUM' },
     { id: crypto.randomUUID(), to: '/portfolio', text: 'PORTFOLIO' },

@@ -1,0 +1,134 @@
+.About {
+    background-color: #1e2326;
+    color: #fff;
+    height: 80vh;
+}
+
+.About .About-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.About h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    margin: 0;
+
+}
+
+/* .About .About-container p {
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+} */
+
+/* .About .About-container p span {
+    color: #1CB698;
+    font-weight: bold;
+} */
+
+.About .fila {
+    display: flex;
+    gap: 20px;
+}
+
+.About .fila .Abount-col-left, 
+.About .fila .Abount-col-right {
+    width: 50%;
+}
+
+.About .fila .Abount-col-left h3, 
+.About .fila .Abount-col-right h3 {
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.About .fila .Abount-col-left ul, 
+.About .fila .Abount-col-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.About .fila .Abount-col-left ul li,
+.About .fila .Abount-col-right ul li {
+    margin: 12px 0;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.About .fila .Abount-col-left li {
+    justify-content: end;
+}
+
+.About .fila .Abount-col-right li {
+    justify-content: start;
+}
+
+.About .fila .Abount-col-right li p {
+    margin: 0;
+}
+
+.About .fila .Abount-col-left ul li strong, 
+.About .fila .Abount-col-right ul li strong {
+    display: inline-block;
+    color: #1CB698;
+    width: 260px;
+    text-align: end;
+}
+
+.About .fila .Abount-col-left ul li span, 
+.About .fila .Abount-col-right ul li span {
+    background-color: #1CB698;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.About button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.About button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+
+.About button:hover .overlay {
+    width: 100%;
+}
+
+@media screen and (max-width:700px) {
+    .About .fila {
+        justify-content: center;
+    }
+
+    .About .fila .Abount-col-left, 
+    .About .fila .Abount-col-right {
+        width: fit-content;
+    }
+
+    .About .fila .Abount-col-left ul li strong,
+    .About .fila .Abount-col-right ul li p {
+        max-width: 150px;
+        height: 50px;
+    }
+}
