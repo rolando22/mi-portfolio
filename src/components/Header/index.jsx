@@ -1,6 +1,16 @@
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import { MenuResponsiveIcon } from '../';
 import './Header.css';
+
+const menu = [
+    { id: crypto.randomUUID(), to: '/', text: 'INICIO' },
+    { id: crypto.randomUUID(), to: '/sobre-mi', text: 'SOBRE MÍ' },
+    { id: crypto.randomUUID(), to: '/skills', text: 'SKILLS' },
+    // { id: crypto.randomUUID(), to: '/curriculum', text: 'CURRICULUM' },
+    { id: crypto.randomUUID(), to: '/portfolio', text: 'PORTFOLIO' },
+    // { id: crypto.randomUUID(), to: '/contacto', text: 'CONTACTO' },
+];
 
 export function Header() {
     const [showMenuResponsive, setShowMenuResponsive] = useState(false);
@@ -13,16 +23,15 @@ export function Header() {
         <header className='Header'>
             <section className='Header-container'>
                 <section className='Header-logo'>
-                    <a href="#">Rolando</a>
+                    <NavLink to='/'>Rolando</NavLink>
                 </section>
                 <nav className={`Header-nav ${classResponsive}`}>
                     <ul>
-                        <li><a href="#inicio">INICIO</a></li>
-                        <li><a href="#sobremi">SOBRE MI</a></li>
-                        <li><a href="#skills">SKILLS</a></li>
-                        {/* <li><a href="#curriculum">CURRICULUM</a></li> */}
-                        <li><a href="#portfolio">PORTFOLIO</a></li>
-                        {/* <li><a href="#contacto">CONTACTO</a></li> */}
+                        {menu.map(item => 
+                            <li key={item.id}>
+                                <NavLink to={item.to}>{item.text}</NavLink>
+                            </li>
+                        )}
                     </ul>
                 </nav>
                 <section 
