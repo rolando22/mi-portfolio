@@ -1,13 +1,16 @@
 import { useParams } from 'react-router-dom';
-import buscadorImagenesGatos from './../../assets/buscador_images_gatos.png';
-import buscadorPeliculas from './../../assets/buscador_peliculas.png';
-import crudUsersReactRedux from './../../assets/crud_users_react_&_redux.png';
-import googleTranslateClone from './../../assets/google_translate_clone.png';
-import reactShopTailWindCss from './../../assets/react_shop_tailwindcss.png';
-import shoppingCartReact from './../../assets/shopping_cart_react.png';
-import todoListReactTypeScript from './../../assets/todo_list_react_typescript.png';
-import todoMachine from './../../assets/todo_machine.png';
-import twitterCard from './../../assets/twitter_card.png';
+import buscadorImagenesGatos from './../../assets/react/buscador_images_gatos.png';
+import buscadorPeliculas from './../../assets/react/buscador_peliculas.png';
+import crudUsersReactRedux from './../../assets/react/crud_users_react_&_redux.png';
+import googleTranslateClone from './../../assets/react/google_translate_clone.png';
+import reactShopTailWindCss from './../../assets/react/react_shop_tailwindcss.png';
+import shoppingCartReact from './../../assets/react/shopping_cart_react.png';
+import todoListReactTypeScript from './../../assets/react/todo_list_react_typescript.png';
+import todoMachine from './../../assets/react/todo_machine.png';
+import twitterCard from './../../assets/react/twitter_card.png';
+import exchangeCriptomonedas from './../../assets/landingPage/exchange_criptomendas.png';
+import blog from './../../assets/landingPage/blog.png';
+import googleClone from './../../assets/landingPage/google_clone.png';
 import './Projects.css';
 
 const projects = {
@@ -86,7 +89,32 @@ const projects = {
         },
         // { id: crypto.randomUUID(), title: '', imgUrl: '', repoUrl: '', demoUrl: '', description: '' },
     ],
-    ['html-css']: [],
+    ['html-css']: [
+        { 
+            id: crypto.randomUUID(), 
+            title: 'Exchange de Criptomonedas', 
+            imgUrl: exchangeCriptomonedas, 
+            repoUrl: 'https://github.com/rolando22/curso-mobile-first', 
+            demoUrl: 'https://rolando22.github.io/curso-mobile-first/', 
+            description: 'Landing Page de un Exchange de Criptomonedas', 
+        },
+        { 
+            id: crypto.randomUUID(), 
+            title: 'Blog', 
+            imgUrl: blog, 
+            repoUrl: 'https://github.com/rolando22/blog-curso-maquetacion-css', 
+            demoUrl: 'https://rolando22.github.io/blog-curso-maquetacion-css/', 
+            description: 'Landing Page de un Blog', 
+        },
+        { 
+            id: crypto.randomUUID(), 
+            title: 'Buscador de Google', 
+            imgUrl: googleClone, 
+            repoUrl: 'https://github.com/rolando22/google-clone', 
+            demoUrl: 'https://rolando22.github.io/google-clone/', 
+            description: 'Landing Page del buscador de Google', 
+        },
+    ],
 };
 
 export function Projects() {
