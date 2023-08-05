@@ -112,6 +112,7 @@ export function Projects() {
                                 rel='noreferrer'
                             >
                                 Repositorio
+                                <span className="overlay"></span>
                             </a>
                             <a 
                                 href={project.demoUrl} 
@@ -119,6 +120,7 @@ export function Projects() {
                                 rel='noreferrer'
                             >
                                 Demo
+                                <span className="overlay"></span>
                             </a>
                         </div>
                     </article>

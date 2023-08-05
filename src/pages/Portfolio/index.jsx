@@ -7,13 +7,13 @@ const technologies = [
         id: crypto.randomUUID(), 
         title: 'React', 
         logo: <ReactLogo />, 
-        description: 'Aplicaciones desarrolladas con React' 
+        description: 'Proyectos desarrollados con React' 
     },
     { 
         id: crypto.randomUUID(), 
         title: 'HTML-CSS', 
         logo: <><HtmlLogo /><CssLogo /></>, 
-        description: 'Aplicaciones desarrolladas con HTML y CSS' 
+        description: 'Proyectos desarrollados con HTML y CSS' 
     },
 ];
 

@@ -40,10 +40,14 @@ export function About() {
                         </ul>
                     </div>
                 </div>
-                <button>
-                    Descargar CV <i className="fa-solid fa-download"></i>
+                <a 
+                    href='https://rolando22.github.io/mi_cv/' 
+                    target='_blank' 
+                    rel='noreferrer'
+                >
+                    Currículum Vitae <i className="fa-solid fa-download"></i>
                     <span className="overlay"></span>
-                </button>
+                </a>
             </div>
         </section>
     );
