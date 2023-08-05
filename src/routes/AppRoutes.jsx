@@ -1,5 +1,5 @@
 import { useRoutes } from "react-router-dom";
-import { About, Home, Portfolio, Projects } from './../pages';
+import { About, Home, Portfolio, Projects, Skills } from './../pages';
 
 export function AppRoutes() {
     
@@ -8,6 +8,7 @@ export function AppRoutes() {
         { path: '/about', element: <About /> },
         { path: '/portfolio', element: <Portfolio /> },
         { path: '/portfolio/:technology', element: <Projects /> },
+        { path: '/skills', element: <Skills /> }
     ]);
 
     return routes;
