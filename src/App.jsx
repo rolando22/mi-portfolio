@@ -5,7 +5,7 @@ import './App.css';
 
 export function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename='/mi-portfolio'>
             <Header />
             <AppRoutes />
         </BrowserRouter>
