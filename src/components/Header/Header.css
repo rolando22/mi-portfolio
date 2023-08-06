@@ -60,6 +60,7 @@
         top: 75px;
         background-color: #252A2E;
         width: 180px;
+        z-index: 99;
     }
     .Header-nav.responsive ul {
         display: block;
@@ -71,6 +72,7 @@
     }
 
     .Header-nav.responsive ul li {
+        background-color: #252A2E;
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }

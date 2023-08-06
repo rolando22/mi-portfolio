@@ -29,7 +29,12 @@ export function Header() {
                     <ul>
                         {menu.map(item => 
                             <li key={item.id}>
-                                <NavLink to={item.to}>{item.text}</NavLink>
+                                <NavLink 
+                                    to={item.to}
+                                    onClick={handleOnClickShowMenuResponsive}
+                                >
+                                    {item.text}
+                                </NavLink>
                             </li>
                         )}
                     </ul>
