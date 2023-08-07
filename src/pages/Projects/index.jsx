@@ -8,6 +8,7 @@ import shoppingCartReact from './../../assets/react/shopping_cart_react.png';
 import todoListReactTypeScript from './../../assets/react/todo_list_react_typescript.png';
 import todoMachine from './../../assets/react/todo_machine.png';
 import twitterCard from './../../assets/react/twitter_card.png';
+import usersList from './../../assets/react/users_list.png';
 import exchangeCriptomonedas from './../../assets/landingPage/exchange_criptomendas.png';
 import blog from './../../assets/landingPage/blog.png';
 import googleClone from './../../assets/landingPage/google_clone.png';
@@ -15,6 +16,14 @@ import './Projects.css';
 
 const projects = {
     react: [
+        { 
+            id: crypto.randomUUID(), 
+            title: 'Users List con React & TypeScript', 
+            imgUrl: usersList, 
+            repoUrl: 'https://github.com/rolando22/users-list', 
+            demoUrl: 'https://rolando22.github.io/users-list/', 
+            description: 'Una aplicación de una prueba técnica que lista usuarios de la API https://randomuser.me/api, poder ordenarlos por nombre, apellido o país, filtrar por país, eliminar usuarios, poder restaurar la lista original y pintar las celdas de la tabla.', 
+        },
         { 
             id: crypto.randomUUID(), 
             title: 'CRUD Users con React & Redux', 
