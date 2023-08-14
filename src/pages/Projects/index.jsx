@@ -9,6 +9,7 @@ import todoListReactTypeScript from './../../assets/react/todo_list_react_typesc
 import todoMachine from './../../assets/react/todo_machine.png';
 import twitterCard from './../../assets/react/twitter_card.png';
 import usersList from './../../assets/react/users_list.png';
+import commentsList from './../../assets/react/comments_list.png';
 import exchangeCriptomonedas from './../../assets/landingPage/exchange_criptomendas.png';
 import blog from './../../assets/landingPage/blog.png';
 import googleClone from './../../assets/landingPage/google_clone.png';
@@ -16,6 +17,14 @@ import './Projects.css';
 
 const projects = {
     react: [
+        { 
+            id: crypto.randomUUID(), 
+            title: 'Comments List con React & React Query', 
+            imgUrl: commentsList, 
+            repoUrl: 'https://github.com/rolando22/comments-react-query', 
+            demoUrl: 'https://rolando22.github.io/comments-react-query/', 
+            description: 'Una aplicación que lista y crea comentarios obtenidos asincrónicamente usando TanStack Query.', 
+        },
         { 
             id: crypto.randomUUID(), 
             title: 'Users List con React & TypeScript', 
