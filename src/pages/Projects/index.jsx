@@ -10,6 +10,7 @@ import todoMachine from './../../assets/react/todo_machine.png';
 import twitterCard from './../../assets/react/twitter_card.png';
 import usersList from './../../assets/react/users_list.png';
 import commentsList from './../../assets/react/comments_list.png';
+import booksList from './../../assets/react/books_list.png';
 import exchangeCriptomonedas from './../../assets/landingPage/exchange_criptomendas.png';
 import blog from './../../assets/landingPage/blog.png';
 import googleClone from './../../assets/landingPage/google_clone.png';
@@ -17,6 +18,14 @@ import './Projects.css';
 
 const projects = {
     react: [
+        { 
+            id: crypto.randomUUID(), 
+            title: 'Books List con React & TailwindCSS', 
+            imgUrl: booksList, 
+            repoUrl: 'https://github.com/rolando22/books-list', 
+            demoUrl: 'https://rolando22.github.io/books-list/', 
+            description: 'Una aplicación que lista libros, filtra por género y cantidad de páginas, se pueden añadir a una lista de lectura, eliminarlos de la lista de lectura y persistir la misma con Localstorage.', 
+        },
         { 
             id: crypto.randomUUID(), 
             title: 'Comments List con React & React Query', 
