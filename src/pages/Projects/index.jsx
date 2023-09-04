@@ -11,6 +11,8 @@ import twitterCard from './../../assets/react/twitter_card.png';
 import usersList from './../../assets/react/users_list.png';
 import commentsList from './../../assets/react/comments_list.png';
 import booksList from './../../assets/react/books_list.png';
+import javascriptQuiz from './../../assets/react/javascript_quiz.png';
+import survey from './../../assets/react/survey.png';
 import exchangeCriptomonedas from './../../assets/landingPage/exchange_criptomendas.png';
 import blog from './../../assets/landingPage/blog.png';
 import googleClone from './../../assets/landingPage/google_clone.png';
@@ -18,6 +20,22 @@ import './Projects.css';
 
 const projects = {
     react: [
+        { 
+            id: crypto.randomUUID(), 
+            title: 'Survey con React & TailwindCSS', 
+            imgUrl: survey, 
+            repoUrl: 'https://github.com/rolando22/survey', 
+            demoUrl: 'https://rolando22.github.io/survey/', 
+            description: 'Una aplicación de una prueba técnica de Payana de una encuesta, calificar preguntas hasta con 5 estrellas y al finalizar un resumen de la encuesta con las calificaciones de cada pregunta.', 
+        },
+        { 
+            id: crypto.randomUUID(), 
+            title: 'JavaScript Quiz con React & Zustand', 
+            imgUrl: javascriptQuiz, 
+            repoUrl: 'https://github.com/rolando22/javascript-quiz', 
+            demoUrl: 'https://rolando22.github.io/javascript-quiz/', 
+            description: 'Una aplicación de un cuestionario de JavaScript usando Zustand.', 
+        },
         { 
             id: crypto.randomUUID(), 
             title: 'Books List con React & TailwindCSS', 
