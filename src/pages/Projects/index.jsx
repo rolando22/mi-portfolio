@@ -13,6 +13,7 @@ import commentsList from './../../assets/react/comments_list.png';
 import booksList from './../../assets/react/books_list.png';
 import javascriptQuiz from './../../assets/react/javascript_quiz.png';
 import survey from './../../assets/react/survey.png';
+import expenseTracker from './../../assets/react/expense_tracker.png';
 import exchangeCriptomonedas from './../../assets/landingPage/exchange_criptomendas.png';
 import blog from './../../assets/landingPage/blog.png';
 import googleClone from './../../assets/landingPage/google_clone.png';
@@ -20,6 +21,14 @@ import './Projects.css';
 
 const projects = {
     react: [
+        { 
+            id: crypto.randomUUID(), 
+            title: 'Expense Tracker con React & TailwindCSS', 
+            imgUrl: expenseTracker, 
+            repoUrl: 'https://github.com/rolando22/expense-tracker', 
+            demoUrl: 'https://rolando22.github.io/expense-tracker/', 
+            description: 'Una aplicación para administrar gastos e ingresos, y visualizarlos en un gráfico usando Victory.', 
+        },
         { 
             id: crypto.randomUUID(), 
             title: 'Survey con React & TailwindCSS', 
