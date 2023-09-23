@@ -14,6 +14,7 @@ import booksList from './../../assets/react/books_list.png';
 import javascriptQuiz from './../../assets/react/javascript_quiz.png';
 import survey from './../../assets/react/survey.png';
 import expenseTracker from './../../assets/react/expense_tracker.png';
+import wordle from './../../assets/react/wordle.png';
 import exchangeCriptomonedas from './../../assets/landingPage/exchange_criptomendas.png';
 import blog from './../../assets/landingPage/blog.png';
 import googleClone from './../../assets/landingPage/google_clone.png';
@@ -21,6 +22,14 @@ import './Projects.css';
 
 const projects = {
     react: [
+        { 
+            id: crypto.randomUUID(), 
+            title: 'Wordle con React', 
+            imgUrl: wordle, 
+            repoUrl: 'https://github.com/rolando22/wordle', 
+            demoUrl: 'https://rolando22.github.io/wordle/', 
+            description: 'Una aplicación de un juego de adivinar la palabra en un máximo de 6 turnos.', 
+        },
         { 
             id: crypto.randomUUID(), 
             title: 'Expense Tracker con React & TailwindCSS', 
