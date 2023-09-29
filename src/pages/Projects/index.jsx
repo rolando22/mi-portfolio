@@ -15,6 +15,7 @@ import javascriptQuiz from './../../assets/react/javascript_quiz.png';
 import survey from './../../assets/react/survey.png';
 import expenseTracker from './../../assets/react/expense_tracker.png';
 import wordle from './../../assets/react/wordle.png';
+import memoryGame from './../../assets/react/memory_game.png';
 import exchangeCriptomonedas from './../../assets/landingPage/exchange_criptomendas.png';
 import blog from './../../assets/landingPage/blog.png';
 import googleClone from './../../assets/landingPage/google_clone.png';
@@ -22,6 +23,14 @@ import './Projects.css';
 
 const projects = {
     react: [
+        { 
+            id: crypto.randomUUID(), 
+            title: 'Memory Game con React & TailwindCSS', 
+            imgUrl: memoryGame, 
+            repoUrl: 'https://github.com/rolando22/memory-game', 
+            demoUrl: 'https://rolando22.github.io/memory-game/', 
+            description: 'Una aplicación de un juego de memoria, cuenta la cantidad de movimientos realizados para ganar y un botón para reiniciar el juego.', 
+        },
         { 
             id: crypto.randomUUID(), 
             title: 'Wordle con React', 
