@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom';
+import trelloClone from './../../assets/angular/trelloClone.png';
 import buscadorImagenesGatos from './../../assets/react/buscador_images_gatos.png';
 import buscadorPeliculas from './../../assets/react/buscador_peliculas.png';
 import crudUsersReactRedux from './../../assets/react/crud_users_react_&_redux.png';
@@ -22,6 +23,16 @@ import googleClone from './../../assets/landingPage/google_clone.png';
 import './Projects.css';
 
 const projects = {
+    angular: [
+        { 
+            id: crypto.randomUUID(), 
+            title: 'Trello Clone', 
+            imgUrl: trelloClone, 
+            repoUrl: 'https://github.com/rolando22/angular-trello-clone', 
+            demoUrl: 'https://angular-trello-clone-4071b.web.app', 
+            description: 'Una aplicación de un clone de Trello, autenticación de usuarios, poder crear Boards, Lists y Cards en cuenta propia.', 
+        },
+    ],
     react: [
         { 
             id: crypto.randomUUID(), 

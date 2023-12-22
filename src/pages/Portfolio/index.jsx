@@ -1,8 +1,14 @@
 import { NavLink } from 'react-router-dom';
-import { CssLogo, HtmlLogo, ReactLogo } from './../../components';
+import { AngularLogo, CssLogo, HtmlLogo, ReactLogo } from './../../components';
 import './Portfolio.css';
 
 const technologies = [
+    { 
+        id: crypto.randomUUID(), 
+        title: 'Angular', 
+        logo: <AngularLogo />, 
+        description: 'Proyectos desarrollados con Angular' 
+    },
     { 
         id: crypto.randomUUID(), 
         title: 'React', 
