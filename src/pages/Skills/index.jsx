@@ -4,22 +4,17 @@ const skills = [
     { 
         id: crypto.randomUUID(), 
         title: 'Lenguajes', 
-        technologies: ['JavaScript', 'TypeScript', 'NodeJS'] 
+        technologies: ['JavaScript', 'TypeScript'] 
     },
     { 
         id: crypto.randomUUID(), 
-        title: 'Otras Tecnologías Web', 
-        technologies: ['HTML5', 'CSS3'] 
+        title: 'Tecnologías para desarrollo Frontend', 
+        technologies: ['HTML5', 'CSS3', 'React', 'Redux', 'Angular', 'SASS', 'Bootstrap', 'TailwindCSS'] 
     },
     { 
         id: crypto.randomUUID(), 
-        title: 'Frameworks/Librerías para desarrollo Frontend', 
-        technologies: ['React', 'Redux', 'Xstate', 'Bootstrap', 'TailwindCSS'] 
-    },
-    { 
-        id: crypto.randomUUID(), 
-        title: 'Frameworks/Librerías para desarrollo Backend', 
-        technologies: ['Express', 'Passport', 'JWT', 'Sequelize'] 
+        title: 'Tecnologías para desarrollo Backend', 
+        technologies: ['NodeJS', 'Express', 'Sequelize', 'Mongoose'] 
     },
     { 
         id: crypto.randomUUID(), 
