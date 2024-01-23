@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom';
+import noImageAvailable from './../../assets/no_image_available.png';
 import trelloClone from './../../assets/angular/trelloClone.png';
 import buscadorImagenesGatos from './../../assets/react/buscador_images_gatos.png';
 import buscadorPeliculas from './../../assets/react/buscador_peliculas.png';
@@ -31,6 +32,32 @@ const projects = {
             repoUrl: 'https://github.com/rolando22/angular-trello-clone', 
             demoUrl: 'https://angular-trello-clone-4071b.web.app', 
             description: 'Una aplicación de un clone de Trello, autenticación de usuarios, poder crear Boards, Lists y Cards en cuenta propia.', 
+        },
+    ],
+    nodejs: [
+        { 
+            id: crypto.randomUUID(), 
+            title: 'Todo API', 
+            imgUrl: noImageAvailable, 
+            repoUrl: 'https://github.com/rolando22/todo-api', 
+            demoUrl: '', 
+            description: 'Una API de un CRUD de ToDos con MySQL, MongoDB como BD.', 
+        },
+        { 
+            id: crypto.randomUUID(), 
+            title: 'Shop API', 
+            imgUrl: noImageAvailable, 
+            repoUrl: 'https://github.com/rolando22/react-shop-backend', 
+            demoUrl: '', 
+            description: 'Una API de un E-commerce con Postgress como BD.', 
+        },
+        { 
+            id: crypto.randomUUID(), 
+            title: 'Notes APP', 
+            imgUrl: noImageAvailable, 
+            repoUrl: 'https://github.com/rolando22/notes-app', 
+            demoUrl: '', 
+            description: 'Un servidor web de una APP de notas con MongoDB como BD.', 
         },
     ],
     react: [
@@ -228,7 +255,8 @@ export function Projects() {
                             <a 
                                 href={project.demoUrl} 
                                 target='_blank' 
-                                rel='noreferrer'
+                                rel='noreferrer' 
+                                style={{ 'display': project.demoUrl === '' ? 'none' : 'block' }}
                             >
                                 Demo
                                 <span className="overlay"></span>
