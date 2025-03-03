@@ -17,11 +17,12 @@
 
 }
 
-/* .About .About-container p {
+.About-container p {
     font: 18px;
     line-height: 22px;
     margin-bottom: 20px;
-} */
+    text-align: left;
+}
 
 /* .About .About-container p span {
     color: #1CB698;

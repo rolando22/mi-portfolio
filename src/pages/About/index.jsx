@@ -5,6 +5,11 @@ export function About() {
         <section className="About">
             <div className="About-container">
                 <h2>Sobre Mí</h2>
+                <p>
+                    Soy Desarrollador Web y Mobile con JavaScript. Tengo más 2 años de experiencia laboral en los cuáles he
+                    trabajado en proyectos desarrollando nuevas funcionalidades, refactorizando código e implementando APIs
+                    externas.
+                </p>
                 <h3>Datos Personales</h3>
                 <div className="fila">
                     <div className="Abount-col-left">
@@ -16,7 +21,7 @@ export function About() {
                                 <strong>Email</strong>
                             </li>
                             <li>
-                                <strong>Provincia</strong>
+                                <strong>Localidad</strong>
                             </li>
                             <li>
                                 <strong>País</strong>

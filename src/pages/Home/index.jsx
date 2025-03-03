@@ -14,7 +14,7 @@ export function Home() {
                     <img src="img/hero.png" alt="" />
                 </div> */}
                 <h1>Rolando Rafael Castañon Fernández</h1>
-                <h2>Desarrollador Web (Stack React/NodeJS)</h2>
+                <h2>Desarrollador Web y Mobile con JavaScript</h2>
                 <div className='Home-redes'>
                     <a 
                         className='Home-redes-item' 
