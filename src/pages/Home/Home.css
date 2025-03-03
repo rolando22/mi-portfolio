@@ -51,7 +51,7 @@
     line-height: 42px;
     margin: 40px 5px;
     font-size: 20px;
-    transition: .3s;
+    transition: background-color .5s ease;
 }
 
 .Home-redes-item:hover {

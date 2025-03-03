@@ -19,10 +19,12 @@
     color: #1CB698;
     text-decoration: none;
 }
-.Header section ul {
+
+.Header section ul, .Header section .Header-nav-desktop {
     display: flex;
     list-style: none;
 }
+
 .Header section nav ul li a {
     text-align: none;
     color: #fff;
@@ -31,9 +33,11 @@
     transition: .5s;
     text-decoration: none;
 }
+
 .Header section nav ul li a:hover {
     color: #1CB698;
 }
+
 
 .Header-nav-responsive {
     background-color: #1CB698;
@@ -46,32 +50,57 @@
 
 @media screen and (max-width:980px) {
     nav {
+    }
+    
+    .Header-nav-desktop {
         display: none;
     }
+    
+    .Header-nav-mobile {
+        /* display: block; */
+        width: 100%;
+        position: absolute;
+        padding: 0;
+        right: 0;
+        top: 0;
+        transform: translate(100%, -100%);
+        transition: all ease-out .5s;
+    }
 
+    .Header-nav-mobile.show {
+        transform: translate(0, 0);
+    }
+    
+    .Header-nav-mobile ul {
+        display: flex;
+        flex-direction: column;
+    }
+    
     .Header-nav-responsive {
         display: flex;
     }
-
-    .Header-nav.responsive {
+    
+    .Header-nav.responsive .Header-nav-mobile {
         display: block;
         position: absolute;
         right: 0;
         top: 75px;
         background-color: #252A2E;
         width: 180px;
+        border-radius: 10px;
         z-index: 99;
+        transform: translateX(0);
     }
-    .Header-nav.responsive ul {
+    /* .Header-nav.responsive ul {
         display: block;
         width: 100%;
         position: absolute;
         padding: 0;
         right: 0;
         top: 0;
-    }
+    } */
 
-    .Header-nav.responsive ul li {
+    .Header-nav-mobile ul li {
         background-color: #252A2E;
         border-bottom: 1px solid #fff;
         padding: 10px 0;
