@@ -1,5 +1,5 @@
-import { NavLink } from 'react-router-dom';
-import { AngularLogo, CssLogo, HtmlLogo, NodeJSLogo, ReactLogo } from './../../components';
+import { AngularLogo, CssLogo, HtmlLogo, NodeJSLogo, ReactLogo, TechnologyList } from './../../components';
+
 import './Portfolio.css';
 
 const technologies = [
@@ -32,19 +32,7 @@ const technologies = [
 export function Portfolio() {
     return (
         <section className='Portfolio'>
-            <div className='Portfolio-container'>
-                {technologies.map(technology => 
-                    <article className='Portfolio-technology' key={technology.id}>
-                        <NavLink to={`/portfolio/${technology.title.toLocaleLowerCase()}`}>
-                            <h3>{technology.title}</h3>
-                            <div className='Portfolio-technology-logo'>
-                                {technology.logo}
-                            </div>
-                            <p>{technology.description}</p>
-                        </NavLink>
-                    </article>
-                )}
-            </div>
+            <TechnologyList technologies={technologies} />
         </section>
     );
 }
