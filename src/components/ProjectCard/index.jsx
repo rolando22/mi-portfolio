@@ -1,9 +1,13 @@
+import { useEffectElement } from '../../hooks/useEffectElement';
+
 import './ProjectCard.css';
 
 // eslint-disable-next-line react/prop-types
 export function ProjectCard({ title, imgUrl, description, repoUrl, demoUrl }) {
+  const { node } = useEffectElement({ styles: 'Projects-project effect' });
+
   return (
-    <article className='Projects-project'>
+    <article ref={node} className='Projects-project'>
       <h3>{title}</h3>
       <figure>
         <img 

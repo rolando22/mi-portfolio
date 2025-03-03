@@ -49,15 +49,11 @@
 }
 
 @media screen and (max-width:980px) {
-    nav {
-    }
-    
     .Header-nav-desktop {
         display: none;
     }
     
     .Header-nav-mobile {
-        /* display: block; */
         width: 100%;
         position: absolute;
         padding: 0;
@@ -91,14 +87,6 @@
         z-index: 99;
         transform: translateX(0);
     }
-    /* .Header-nav.responsive ul {
-        display: block;
-        width: 100%;
-        position: absolute;
-        padding: 0;
-        right: 0;
-        top: 0;
-    } */
 
     .Header-nav-mobile ul li {
         background-color: #252A2E;

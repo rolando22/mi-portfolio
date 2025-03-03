@@ -1,10 +1,15 @@
 import { GitHubIcon, LinkedInIcon } from "../../components";
+
+import { useEffectElement } from "../../hooks/useEffectElement";
+
 import './Home.css';
 
 export function Home() {
+    const { node } = useEffectElement({ styles: 'Home-container effect2' });
+
     return (
         <section className='Home'>
-            <div className='Home-container'>
+            <div ref={node} className='Home-container'>
                 {/* <div className="contenedor-img">
                     <img src="img/hero.png" alt="" />
                 </div> */}
