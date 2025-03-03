@@ -20,7 +20,7 @@
     text-decoration: none;
 }
 
-.Header section ul, .Header section .Header-nav-desktop {
+.Header-nav-desktop ul {
     display: flex;
     list-style: none;
 }
@@ -38,6 +38,14 @@
     color: #1CB698;
 }
 
+.Header-nav-mobile {
+    opacity: 0;
+    height: 0px;
+}
+
+.Header-nav-mobile ul {
+    list-style: none;
+}
 
 .Header-nav-responsive {
     background-color: #1CB698;
@@ -54,7 +62,9 @@
     }
     
     .Header-nav-mobile {
+        opacity: 1;
         width: 100%;
+        height: auto;
         position: absolute;
         padding: 0;
         right: 0;
