@@ -8,34 +8,20 @@
 
 .Skills-container {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
 
     opacity: 0;
     position: relative;
     left: -30px;
 }
 
-.Skills-skill {
-    height: 300px;
-}
+@media screen and (max-width:768px) {
 
-.Skills-skill h3 {
-    height: 60px;
-    padding-left: 40px;
-    color: #1CB698;
-    text-align: start;
-}
-
-.Skills-skill ul {
-    list-style: none;
-}
-
-.Skills-skill ul li {
-    text-align: start;
-}
-
-@media screen and (max-width:700px){
+    .Skills-container {
+        padding: 0;
+    }
 
     .skills .fila{
         display: block;
