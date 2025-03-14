@@ -1,0 +1,21 @@
+.Skills-skill {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.Skills-skill h3 {
+  color: #1CB698;
+  text-align: start;
+}
+
+.Skills-skill  {
+  text-align: left;
+}
+
+@media screen and (max-width:430px) {
+  .Skills-skill {
+    display: flex;
+    flex-direction: column;
+  }
+}
