@@ -1,9 +1,13 @@
+import { useEffectElement } from '../../hooks/useEffectElement';
+
 import './About.css';
 
 export function About() {
+    const { node } = useEffectElement({ styles: 'About-container effect' });
+
     return (
         <section className="About">
-            <div className="About-container">
+            <div ref={node} className="About-container">
                 <h2>Sobre Mí</h2>
                 <p>
                     Soy Desarrollador Web y Mobile con JavaScript. Tengo más 2 años de experiencia laboral en los cuáles he

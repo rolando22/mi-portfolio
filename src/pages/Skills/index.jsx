@@ -1,3 +1,4 @@
+import { useEffectElement } from '../../hooks/useEffectElement';
 import './Skills.css';
 
 const skills = [
@@ -24,10 +25,12 @@ const skills = [
 ];
 
 export function Skills() {
+    const { node } = useEffectElement({ styles: 'Skills-container effect' });
+
     return (
         <section className="Skills">
             <h2>Habilidades</h2>
-            <div className="Skills-container">
+            <div ref={node} className="Skills-container">
                 {skills.map(skill => 
                     <article 
                         className='Skills-skill'
