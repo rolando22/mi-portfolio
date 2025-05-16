@@ -10,9 +10,9 @@ export function About() {
             <div ref={node} className="About-container">
                 <h2>Sobre Mí</h2>
                 <p>
-                    Soy Desarrollador Web y Mobile con JavaScript. Tengo más 2 años de experiencia laboral en los cuáles he
-                    trabajado en proyectos desarrollando nuevas funcionalidades, refactorizando código e implementando APIs
-                    externas.
+                    Soy Desarrollador Web y Mobile con JavaScript. Tengo más de 2 años de experiencia laboral en los cuáles he
+                    trabajado en varios proyectos analizando requerimientos, participando en el desarrollo de diseños de sistemas,
+                    desarrollando nuevas funcionalidades, refactorizando código e implementando APIs externas.
                 </p>
                 <h3>Datos Personales</h3>
                 <div className="fila">

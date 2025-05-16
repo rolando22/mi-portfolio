@@ -24,14 +24,9 @@ a:hover {
 }
 
 body {
-    margin: 0 auto;
-    box-sizing: border-box;
-    display: flex;
-    place-items: center;
-    max-width: 1240px;
-    min-width: 320px;
-    min-height: 100vh;
+    margin: 0;
     background-color: #1e2326;
+    box-sizing: border-box;
 }
 
 h1 {
