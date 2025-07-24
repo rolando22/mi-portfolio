@@ -40,6 +40,22 @@ export const projects = {
         projects: [
             { 
                 id: crypto.randomUUID(), 
+                title: 'PlatziStore API - MongoDB', 
+                imgUrl: noImageAvailable, 
+                repoUrl: 'https://github.com/rolando22/nestjs-platzi-store-mongodb', 
+                demoUrl: '', 
+                description: 'Una API de una store con NestJS y MongoDB como DB.', 
+            },
+            { 
+                id: crypto.randomUUID(), 
+                title: 'PlatziStore API', 
+                imgUrl: noImageAvailable, 
+                repoUrl: 'https://github.com/rolando22/nestjs-platzi-store', 
+                demoUrl: '', 
+                description: 'Una API de una store con NestJS y Postgres como DB.', 
+            },
+            { 
+                id: crypto.randomUUID(), 
                 title: 'Todo API', 
                 imgUrl: noImageAvailable, 
                 repoUrl: 'https://github.com/rolando22/todo-api', 
