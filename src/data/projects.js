@@ -40,6 +40,14 @@ export const projects = {
         projects: [
             { 
                 id: crypto.randomUUID(), 
+                title: 'Teslo Shop API', 
+                imgUrl: noImageAvailable, 
+                repoUrl: 'https://github.com/rolando22/nestjs-teslo-shop', 
+                demoUrl: '', 
+                description: 'Una API de una tienda con NestJS y Postgres como DB.', 
+            },
+            { 
+                id: crypto.randomUUID(), 
                 title: 'PlatziStore API - MongoDB', 
                 imgUrl: noImageAvailable, 
                 repoUrl: 'https://github.com/rolando22/nestjs-platzi-store-mongodb', 
