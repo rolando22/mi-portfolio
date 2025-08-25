@@ -1,5 +1,9 @@
 import noImageAvailable from '../assets/no_image_available.png';
+
+import mapsApp from '../assets/angular/mapsApp.png';
+import tesloShopApp from '../assets/angular/tesloShopApp.png';
 import trelloClone from '../assets/angular/trelloClone.png';
+
 import buscadorImagenesGatos from '../assets/react/buscador_images_gatos.png';
 import buscadorPeliculas from '../assets/react/buscador_peliculas.png';
 import crudUsersReactRedux from '../assets/react/crud_users_react_&_redux.png';
@@ -25,6 +29,22 @@ export const projects = {
     angular: {
         title: 'Proyectos Desarrollados con Angular',
         projects: [
+            { 
+                id: crypto.randomUUID(), 
+                title: 'Teslo Shop', 
+                imgUrl: tesloShopApp, 
+                repoUrl: 'https://github.com/rolando22/angular-teslo-shop-app', 
+                demoUrl: '', 
+                description: 'Una aplicación de una tienda virtual con autenticación.', 
+            },
+            { 
+                id: crypto.randomUUID(), 
+                title: 'Maps App', 
+                imgUrl: mapsApp, 
+                repoUrl: 'https://github.com/rolando22/angular-maps-app', 
+                demoUrl: 'https://inquisitive-basbousa-c2ba12.netlify.app', 
+                description: 'Una aplicación de mapas usando Mapbox.', 
+            },
             { 
                 id: crypto.randomUUID(), 
                 title: 'Trello Clone', 
